@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only('apiAddToCartValueStream (with fresh session)', async ({ page, request }) => {
+test('apiAddToCartValueStream (with fresh session)', async ({ page, request }) => {
 
   // Open product page
   await page.goto('https://glogangworldwide.com/products/glo-gang-sun-socks-black');
