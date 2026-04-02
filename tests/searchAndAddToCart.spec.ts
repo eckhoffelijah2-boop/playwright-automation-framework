@@ -1,7 +1,7 @@
 import { test,expect,Locator,Page } from '@playwright/test';
 import {POManager} from '../POMts/POManager';
 
-test('searchAndAddToCart', async ({ page }) => {
+test('value stream - add product to cart via API and verify in UI', async ({ page }) => {
   const poManager = new POManager(page);
   const amazonHomePage = poManager.getAmazonHomePage();
   const airPodsPage = poManager.getAirPodsPage();
